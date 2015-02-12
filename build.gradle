@@ -1,0 +1,47 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+
+
+jar {
+    baseName = 'LoggingDemo'
+    version = '0.0.1-SNAPSHOT'
+
+ 	manifest {
+        attributes 'Main-Class': 'com.ariesmcrae.slf4jlogback.Main'
+    }
+    
+	doFirst {
+    	from { configurations.runtime.collect { it.isDirectory() ? it : zipTree(it) } }
+  	}
+          
+}
+
+
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+
+
+repositories {
+	mavenLocal()
+    mavenCentral()
+    jcenter()
+    maven { url "https://repo.spring.io/libs-release" }
+    maven { url "https://repository.jboss.org/nexus/content/repositories/releases" }
+}
+
+
+
+dependencies {
+	compile 'org.slf4j:slf4j-api:+'
+	compile 'ch.qos.logback:logback-classic:+'
+	compile 'ch.qos.logback:logback-core:+'	
+}
+
+
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.12'
+}

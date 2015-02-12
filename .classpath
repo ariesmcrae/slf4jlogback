@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER" exported="true"/>
+	<classpathentry sourcepath="C:/dev/tools/gradle-1.10/repository/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.10/4d2725efe68b9943ba0deaf334bb27116ca6b687/slf4j-api-1.7.10-sources.jar" kind="lib" path="C:/dev/tools/gradle-1.10/repository/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.10/5b338f206827d88acd890739f400a9b7664e5984/slf4j-api-1.7.10.jar" exported="true"/>
+	<classpathentry kind="lib" path="C:/dev/tools/maven/repo/local/ch/qos/logback/logback-classic/1.1.2/logback-classic-1.1.2.jar" exported="true"/>
+	<classpathentry kind="lib" path="C:/dev/tools/maven/repo/local/ch/qos/logback/logback-core/1.1.2/logback-core-1.1.2.jar" exported="true"/>
+</classpath>
